@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Latihan | JavaScript</title>
+    <script>
+        function jumlahkan(){
+            let _bil1 = document.getElementById("bil1").value;
+            let _bil2 = document.getElementById("bil2").value;
+            let _bil3 = Number(_bil1) + Number(_bil2);
+            console.log("bilangan 1 " +_bil1);
+            console.log("bilangan 2 " +_bil2);
+            console.log("bilangan 3 " +_bil3);
+            let txt_bil3 = document.getElementById("bil3");
+            txt_bil3.value = _bil3;
+        }
+    </script>
+</head>
+<body>
+    <h3>Kalkulator Penjumlahan</h3>
+    <hr/>
+    Masukan Bilangan 1 : <input type="number" value="" size="10" id="bil1"/>
+    <br/>
+    Masukan Bilangan 2 : <input type="number" value="" size="10" id="bil2"/>
+    <br/>
+    <button>Hitung Jumlah</button><br/>
+    Hasil Jumlah : <input type="number" value="" size="10" id="bil1">
+</body>
+</html>

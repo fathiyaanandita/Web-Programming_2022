@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript | Fathiya</title>
+</head>
+<body>
+    <h3>Kalkulator</h3>
+    <br>
+    <br>
+    <label for="">Angka 1</label>
+    <input type="text" id="angka1">
+    <br>
+    <br>
+    <label for="">Angka 2</label>
+    <input type="text" id="angka2">
+    <br>
+    <br>
+    <label for="">Angka 3</label>
+    <input type="text" id="angka3">
+    <br>
+
+    <button onclick="ftambah()">Tambah (+)</button>
+    <button>Kurang (-)</button>
+
+    <script>
+        var angka1 = document.getElementById("angka1");
+        var angka2 = document.getElementById("angka2");
+        var hasil = document.getElementById("hasil");
+
+        function ftambah(){
+            hasil.value = Number(angka1.value) +Number(angka2.value)
+            console.log('bilangan1' + angka1)
+            console.log('bilangan2' + angka2)
+            console.log('bilangan3' + angka3)
+        }
+        
+    </script>
+</body>
+</html>
