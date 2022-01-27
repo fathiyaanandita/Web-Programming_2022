@@ -1,0 +1,39 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    margin: 0;
+}
+nav{
+    background: darkred;
+    flex: 0 0 30vh;
+    flex-direction: row;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+}
+.tainer{
+    display: flex;
+    flex: 1;
+}
+.tainer>article{
+    flex: 1;
+    order: 1;
+    flex:0 0 148vh;
+}
+.tainer>aside{
+    flex:0 0 30vh;
+    background: orangered;
+    order: 2;
+}
+header,footer{
+    background: darksalmon;
+    height: 20vh;
+    width: 178vh;
+}
+nav,header,article,aside,footer{
+    padding: 1em;
+}
