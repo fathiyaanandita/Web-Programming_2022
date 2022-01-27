@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>menghitung keliling dan luas lingkaran</title>
+  </head>
+  <body>
+    <!-- ini menghitung menggunakan console -->
+    <!-- // console.log(titel);
+    // console.log('keliling lingkaran dengan jari-jari ' + jari2 + ' = ' + keliling);
+    // console.log('dan luasnya' + ' = ' + luas); -->
+
+    <!-- menghitung menggunakan fungsi if, else if dan else -->
+    <script>
+      let luas = 3.14 * jari2 * jari2;
+      let keliling = 2 * 3.14 * jari2;
+      let nama = 'program java Script';
+      let nama1 = ' Nurul fikri';
+      let titel = nama + nama1;
+      function hitungKeliling() {
+        const jari2 = document.getElementById('jari2');
+        const keliling = document.getElementById('keliling');
+        const luas = document.getElementById('luas');
+
+        if (jari2.value == 1) {
+          keliling.value = 2 * 3.14 * jari2.value;
+        } else if (jari2.value > 1) {
+          keliling.value = 2 * 3.14 * jari2.value;
+        } else jari2.value > 1;
+        luas.value = 3.14 * jari2.value * jari2.value;
+      }
+    </script>
+    <h1>Kalkulator menghitung keliling dan luas lingkaran</h1>
+    <br />
+    <h4 for="jari2">jari-jari</h4>
+    <input type="text" id="jari2" />
+    <br />
+    <button onclick="hitungKeliling()">cetak</button>
+    <br />
+    <h4 for="keliling">keliling</h4>
+    <input type="text" id="keliling" />
+    <br />
+    <h4 for="luas">luas</h4>
+    <input type="text" id="luas" />
+  </body>
+</html>
